@@ -1,0 +1,375 @@
+/* --------------GENERAL------------------ */
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Rubic Mono One";
+  src: url("assets/fonts/RubikMonoOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Montserrat";
+}
+
+h2, h3{
+  font-family: "Montserrat";
+  margin: 3rem;
+}
+
+h1 {
+  font-family: "Rubic Mono One", monospace;
+}
+
+
+/* --------------BANNER------------------ */
+
+
+.banner {
+  background-color: black;
+  background: url(./assets/background.jpeg) center / cover;
+  padding: 2rem;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubic Mono One", monospace;
+}
+
+.banner-container {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  max-width: 100%;
+}
+
+.banner-container h1 {
+  padding: 1.5rem 0;
+  font-size: 2rem;
+}
+
+.text-left {
+  align-self: start;
+}
+
+.text-right {
+  align-self: end;
+}
+
+.text-main {
+  font-size: 2.5rem !important;
+}
+
+.button-group {
+  align-self: start;
+  width: max-content;
+  max-width: 100%;
+  flex-wrap: wrap;
+  text-wrap: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 12px 32px;
+  min-width: 14rem;
+  margin: 16px;
+  border: #fff 2px;
+  border-radius: 16px;
+  border-style: solid;
+  font-family: "Montserrat";
+  font-size: 1.25rem;
+}
+
+.participation-banner {
+  background-color: transparent;
+  color: #fff;
+}
+
+.register-banner, .register-conditions {
+  color: #000;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+}
+
+
+/* --------------MOBILE------------------ */
+
+@media screen and (max-width: 656px) {
+  .banner-container h1 {
+    padding: 1.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .text-main {
+    font-size: 1.5rem !important;
+  }
+
+  button{
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .main-container{
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .card{
+    width: 40% !important;
+  }
+
+  .contacts-row{
+    justify-content: center !important;
+  }
+
+
+  .under-construction{
+    max-width: 100%;
+  }
+
+  .construction{
+    padding: 1.25rem !important;
+  }
+
+  .under-construction h3{
+    margin: 2rem 1rem;
+    text-align: center;
+  }
+
+  #conditions, #contacts{
+    padding: 3rem 0 0 0 !important;
+  }
+
+  #menu{
+    display: none !important;
+  }
+}
+
+
+/* --------------MENU------------------ */
+
+.menu-icon:hover,
+.r6-logo:hover {
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  z-index: 1000;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #202433;
+  padding: 8px 16px;
+  color: #fff;
+  margin-left: 16px;
+  text-wrap: nowrap;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1000;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  z-index: 1000;
+
+}
+
+#menu {
+  margin: 0 5vw;
+  width: 70px;
+  position: -webkit-sticky;
+  position: sticky;
+  transform: translateY(20%);
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-icon {
+  width: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.menu-icon:hover{
+  filter: drop-shadow(0 0 16px rgba(0, 123, 255, 0.7));
+}
+
+.r6-logo {
+  width: 80px;
+  margin-bottom: 7rem;
+}
+
+
+/* --------------MAIN------------------ */
+
+#main {
+  margin-top: -70px;
+  padding-top: 70px;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 96%, rgba(0,0,0,0.9) 98%, rgba(0,0,0,0.5) 99%, rgba(0,0,0,0) 100%); 
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding-bottom: 5rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+margin: auto;
+}
+
+.main-container h1 {
+  padding: 1.5rem 0;
+  font-size: 2rem;
+}
+
+
+/* -------------------------------- */
+
+#conditions,
+#contacts {
+  display: flex;
+  text-align: center;
+  padding: 3rem 3rem 0 0;
+}
+
+.heading {
+  margin-bottom: 2rem;
+}
+
+/* --------------CARDS------------------ */
+
+.cards-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  max-width: 400px;
+  width: 25%;
+  min-height: 100px;
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+  color: #202433;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.card .text {
+  text-align: center;
+  padding: 1rem;
+}
+
+.register-conditions {
+  max-width: max-content;
+  margin: 3rem auto;
+}
+
+/* --------------CONTACTS------------------ */
+
+#contacts {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.contacts-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 0;
+  flex-wrap: wrap;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  h3 {
+    margin: 2rem 5rem;
+  }
+}
+
+
+/* ----------UNDER CONSTRUCTION----------- */
+
+
+.under-construction {
+  position: absolute;
+  top: 2rem;
+  background: rgba(7, 13, 34, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+.under-construction img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+}
+
+.construction {
+  margin-bottom: 3rem;
+  position: relative;
+  width: 90%;
+  height: max-content;
+  padding: 3rem;
+  text-align: center;
+  max-width: calc(100% - 70px);
+}
+
+.teams-image{
+  max-width: 90%;
+  max-height: 80vh;
+  width: auto;
+}
