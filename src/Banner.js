@@ -14,7 +14,7 @@ export default function Banner({ scrollToSection }) {
           >
             Умови участі
           </button>
-          <a href="https://forms.gle/87MRgHMy8Z7n867T6" target="_blank">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSL9UQgquwyKj43sQYdwzxtFStTHHYdkghMsZsDVi4x2dpUg/viewform?pli=1" target="_blank">
             <button className="register-banner">Зареєструвати команду</button>
           </a>
         </div>
