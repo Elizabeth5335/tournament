@@ -1,6 +1,5 @@
 /* --------------GENERAL------------------ */
 
-
 * {
   padding: 0;
   margin: 0;
@@ -26,7 +25,8 @@ body {
   font-family: "Montserrat";
 }
 
-h2, h3{
+h2,
+h3 {
   font-family: "Montserrat";
   margin: 3rem;
 }
@@ -35,9 +35,7 @@ h1 {
   font-family: "Rubic Mono One", monospace;
 }
 
-
 /* --------------BANNER------------------ */
-
 
 .banner {
   background-color: black;
@@ -102,7 +100,8 @@ button {
   color: #fff;
 }
 
-.register-banner, .register-conditions {
+.register-banner,
+.register-conditions {
   color: #000;
 }
 
@@ -110,7 +109,6 @@ button:hover {
   cursor: pointer;
   box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
 }
-
 
 /* --------------MOBILE------------------ */
 
@@ -124,47 +122,51 @@ button:hover {
     font-size: 1.5rem !important;
   }
 
-  button{
+  button {
     font-size: 1rem;
     padding: 8px 16px;
   }
 
-  .main-container{
+  .main-container {
     max-width: 100%;
-    padding: 16px;
   }
 
-  .card{
+  .card {
     width: 40% !important;
   }
 
-  .contacts-row{
+  .contacts-row {
     justify-content: center !important;
   }
 
-
-  .under-construction{
+  .under-construction {
     max-width: 100%;
   }
 
-  .construction{
+  .construction {
     padding: 1.25rem !important;
   }
 
-  .under-construction h3{
+  .under-construction h3 {
     margin: 2rem 1rem;
     text-align: center;
   }
 
-  #conditions, #contacts{
+  #conditions,
+  #contacts,
+  #tournamentInfo {
     padding: 3rem 0 0 0 !important;
   }
 
-  #menu{
+  #menu {
     display: none !important;
   }
-}
 
+  .flex {
+    padding: 2rem !important;
+    margin: 0 1rem;
+  }
+}
 
 /* --------------MENU------------------ */
 
@@ -195,7 +197,6 @@ button:hover {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   z-index: 1000;
-
 }
 
 #menu {
@@ -217,7 +218,7 @@ button:hover {
   margin-bottom: 1.5rem;
 }
 
-.menu-icon:hover{
+.menu-icon:hover {
   filter: drop-shadow(0 0 16px rgba(0, 123, 255, 0.7));
 }
 
@@ -226,14 +227,20 @@ button:hover {
   margin-bottom: 7rem;
 }
 
-
 /* --------------MAIN------------------ */
 
 #main {
   margin-top: -70px;
   padding-top: 70px;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 96%, rgba(0,0,0,0.9) 98%, rgba(0,0,0,0.5) 99%, rgba(0,0,0,0) 100%); 
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 96%,
+    rgba(0, 0, 0, 0.9) 98%,
+    rgba(0, 0, 0, 0.5) 99%,
+    rgba(0, 0, 0, 0) 100%
+  );
   display: flex;
   justify-content: start;
   align-items: start;
@@ -244,7 +251,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-margin: auto;
+  margin: auto;
 }
 
 .main-container h1 {
@@ -252,11 +259,12 @@ margin: auto;
   font-size: 2rem;
 }
 
-
 /* -------------------------------- */
 
 #conditions,
-#contacts {
+#contacts,
+#tournamentInfo,
+#conditions {
   display: flex;
   text-align: center;
   padding: 3rem 3rem 0 0;
@@ -304,9 +312,13 @@ margin: auto;
   margin: 3rem auto;
 }
 
+.text a {
+  color: #6f0080;
+}
 /* --------------CONTACTS------------------ */
 
-#contacts {
+#contacts,
+#tournamentInfo {
   flex-direction: column;
   align-items: center;
   margin-bottom: 3rem;
@@ -323,17 +335,15 @@ margin: auto;
     text-decoration: none;
     color: inherit;
   }
-  a:hover{
+  a:hover {
     text-decoration: underline;
   }
   h3 {
-    margin: 2rem 5rem;
+    /* margin: 2rem 5rem; */
   }
 }
 
-
 /* ----------UNDER CONSTRUCTION----------- */
-
 
 .under-construction {
   position: absolute;
@@ -368,8 +378,65 @@ margin: auto;
   max-width: calc(100% - 70px);
 }
 
-.teams-image{
+.teams-image {
   max-width: 90%;
   max-height: 80vh;
   width: auto;
+}
+
+/* ----------------- ABOUT----------------------- */
+
+.flex {
+  display: flex;
+  width: -webkit-fill-available;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #202433;
+  padding: 3rem;
+  border-radius: 16px;
+}
+
+.about-banner {
+  width: 40%;
+  max-width: 500px;
+  border-radius: 16px;
+}
+
+.about-text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 0 2rem;
+}
+
+.about-text a {
+  color: #fff;
+  /* font-weight: bolder; */
+}
+
+.about-text span {
+  margin-bottom: 2rem;
+}
+
+.center {
+  text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  .about-banner {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .about-text {
+    margin: 0 !important;
+  }
 }

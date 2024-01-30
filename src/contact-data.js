@@ -6,8 +6,8 @@ export const contacts = [
   },
   {
     name: "Інстаграм",
-    url: "https://www.instagram.com/huge_gape?igsh=aGN5YjBuMzZnZ2Jv",
-    text: "@huge_gape",
+    url: "https://www.instagram.com/cyber_cat_ua?igsh=MWplaHlzbXpucHV6aQ==",
+    text: "@cyber_cat_ua",
   },
   {
     name: "e-mail",
