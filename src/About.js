@@ -47,9 +47,9 @@ export default function About(props) {
             </span>
             <span>
               Трансляція буде відбуватись на Твіч:{" "}
-              <a href="https://www.twitch.tv/cybercatua">@cybercatua</a> Також
+              <a href="https://www.twitch.tv/cybercatua" target="_blank">@cybercatua</a> Також
               на Ютюб:{" "}
-              <a href="https://www.youtube.com/@r6Cat-UA">Кібер Котик</a>
+              <a href="https://www.youtube.com/@r6Cat-UA" target="_blank">Кібер Котик</a>
             </span>
             <span>
               Обов’язково прочитайте{" "}

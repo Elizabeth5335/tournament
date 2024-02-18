@@ -10,7 +10,7 @@ export default function Contacts() {
           {contacts.map((contact) => (
             <div key={contact.name}>
               <h3>{contact.name}</h3>
-              <a href={contact.url}>
+              <a href={contact.url} target="_blank">
                 <span>{contact.text}</span>
               </a>
             </div>
