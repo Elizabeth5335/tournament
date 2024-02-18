@@ -1,5 +1,4 @@
-import money from "./assets/money.jpg";
-import hours from "./assets/300.jpg";
+import hours from "./assets/hours.jpg";
 import rules from "./assets/rules.jpg";
 import team from "./assets/team.jpg";
 import ua from "./assets/ua.jpg";
@@ -11,15 +10,11 @@ export const conditions = [
   },
   {
     img: hours,
-    text: "Необхідно мати мінімум 300 годин у грі",
+    text: "Необхідно мати мінімум 50 рівень у грі",
   },
   {
     img: team,
     text: "Участь можлива тільки у команді з 5 чоловік (+заміна)",
-  },
-  {
-    img: money,
-    text: "Вступний внесок: 500 грн з команди",
   },
   {
     img: rules,

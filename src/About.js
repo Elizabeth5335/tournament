@@ -21,14 +21,28 @@ export default function About(props) {
         <div className="flex">
           <img src={banner} alt="banner" className="about-banner" />
           <div className="about-text">
-            <span>Формат гри – Pro League 5х5</span>
-            <span>
-              Участь лише для команд, вступний внесок 500 грн з команди. Кожному
-              учаснику необхідно мати мінімум 300 годин у грі
+            <span className="center">
+              <strong >Запрошуємо на ліцензований турнір з Rainbow Six: Siege</strong>
             </span>
             <span>
-              Формат проведення: до 16 команд double elimination, більше 16 –
-              single elimination. Можливий максимум команд – 32. Всі матчі Bo1,
+              <strong >Спонсор турніру: </strong><br /><br />
+              <a href="https://2egaming.com/" target="_blank">2Е GAMING</a> | Your Game - Your Power
+            </span>
+            <span>Формат гри – Pro League 5х5</span>
+            <span>
+              Участь для всіх бажаючих безкоштовна! Кожному учаснику необхідно мати мінімум 50 рівень у грі, та бути
+              громадянином України. (якщо Вам бракує команди, запрошую на сервер дс: <a target="_blank" href="https://discord.com/invite/ng28E5Cdca ">Сервер Котика</a>)
+            </span>
+            <span>
+              <strong>Нагороди:</strong><br /><br />
+              1-е місце:<br />  5х 2E Gaming клавіатура KG315 RGB USB Yellow UKR + Гарнітура 2E Gaming HG315 RGB USB 7.1 Yellow +
+              2E Gaming ігрова поверхня Pro Speed D08, XL.<br /><br />
+              2-е місце:<br />  5х Миша 2E Gaming HyperSpeed Lite, RGB Black + Захисні окуляри 2E Gaming Anti-blue BlackKit + Килимок для миші 2E Gaming Pro Speed L Black.<br /><br />
+              3-е місце:<br />  5х Гарнітура 2E Gaming HG315 RGB USB 7.1 Black + 2E Gaming ігрова поверхня Pro Speed D07, XL.<br />
+            </span>
+            <span>
+              <strong>Формат проведення:</strong><br />До 16 команд double elimination, більше 16 –
+              single elimination. Можливий максимум команд – 32. Груповий етап Bo1,
               гранд-фінал Bo3.
             </span>
             <span>
@@ -45,7 +59,7 @@ export default function About(props) {
                 download
                 target="_blank"
               >
-              правила турніру
+                правила турніру
               </a>
               !
             </span>
@@ -55,7 +69,7 @@ export default function About(props) {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfSL9UQgquwyKj43sQYdwzxtFStTHHYdkghMsZsDVi4x2dpUg/viewform?pli=1"
                 target="_blank"
               >
-              реєстрації
+                реєстрації
               </a>
               !
             </strong>

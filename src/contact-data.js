@@ -1,7 +1,7 @@
 export const contacts = [
   {
     name: "Дискорд",
-    url: "https://discord.gg/Ze6xsGJm",
+    url: "https://discord.com/invite/ng28E5Cdca",
     text: "Сервер Котика",
   },
   {
